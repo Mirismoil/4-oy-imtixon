@@ -96,29 +96,29 @@ input.addEventListener("input", (e) => {
   render(newData);
 });
 // ------------------------------spiner
-// let img = document.querySelector(".stop-img");
-// setTimeout(() => {
-//   img.style.display = "block";
-// }, 100);
-// setTimeout(() => {
-//   img.style.display = "none";
-// }, 1000);
+let img = document.querySelector(".stop-img");
+setTimeout(() => {
+  img.style.display = "block";
+}, 10);
+setTimeout(() => {
+  img.style.display = "none";
+}, 500);
 
-// let result = localStorage.getItem("result");
+let result = localStorage.getItem("result");
 
-// setTimeout(() => {
-//     if(!result){
-//         modalBtn.click();
-//         localStorage.setItem("result", JSON.stringify("result"));
-//     }
-// }, 10000);
-let btn = document.getElementById("btnModal")
+setTimeout(() => {
+  if (!result) {
+    modalBtn.click();
+    localStorage.setItem("result", JSON.stringify("result"));
+  }
+}, 10000);
+let btn = document.getElementById("btnModal");
 // let modals = document.body.querySelector("modal")
-let modal = window.localStorage.getItem('modal')
+let modal = window.localStorage.getItem("modal");
 
 setTimeout(() => {
   if (!modal) {
     btn.click();
-    localStorage.setItem("modal","modal")
+    localStorage.setItem("modal", "modal");
   }
-},5000);
+}, 5000);
