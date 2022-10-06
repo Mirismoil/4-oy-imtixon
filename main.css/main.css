@@ -1,0 +1,16 @@
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar{
+    margin-bottom: 50px;
+}
+.wrapper{
+    margin-bottom: 70px;
+}
+.form-select{
+    margin-right: 10px;
+}
+.stop-img{
+    margin-left: 500px;;
+}
